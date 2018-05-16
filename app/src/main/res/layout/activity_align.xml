@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.activityapp.AlignActivity">
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="left"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="center"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeft" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="right"
+        android:textAlignment="textEnd"
+        app:layout_constraintTop_toBottomOf="@+id/btnCenter" />
+
+</android.support.constraint.ConstraintLayout>

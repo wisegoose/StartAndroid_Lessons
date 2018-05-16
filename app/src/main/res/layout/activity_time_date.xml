@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.activityapp.TimeDateActivity">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="00.00.00"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="day/month/year"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+</android.support.constraint.ConstraintLayout>

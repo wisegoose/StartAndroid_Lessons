@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.activityapp.MainActivity">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here you must write your name"
+        android:padding="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnSecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_activity"
+        app:layout_constraintTop_toBottomOf="@id/tvText" />
+
+    <Button
+        android:id="@+id/btnDialogActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_activity"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecondActivity" />
+
+    <Button
+        android:id="@+id/btnShowDateAndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_date_time"
+        app:layout_constraintTop_toBottomOf="@+id/btnDialogActivity" />
+
+    <Button
+        android:id="@+id/btnNameActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name Activity"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowDateAndTime" />
+<LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toBottomOf="@+id/btnNameActivity">
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="color"
+         />
+
+    <Button
+        android:id="@+id/btnAlign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="align"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        >
+        <Button
+            android:id="@+id/btnWeb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Web"/>
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="call" />
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="map" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save files on device storage"
+        app:layout_constraintTop_toBottomOf="@+id/layout2" />
+    <Button
+        android:id="@+id/btnHandler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handler"
+        app:layout_constraintTop_toBottomOf="@+id/btnFile" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActivityApp</string>
+    <string name="show_date_time"><![CDATA[Show Date & Time]]></string>
+    <string name="second_activity">Second Activity</string>
+    <string name="dialog_activity">Dialog Activity</string>
+    <string name="submit">Submit</string>
+</resources>
